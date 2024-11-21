@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import axiosInstance from './utils/axiosConfig'; // Import the configured instance
+import axiosInstance from '../utils/axiosConfig'; // Import the configured instance
+import '../styles/LoginPage.css';
 
 
 const LoginPage = () => {

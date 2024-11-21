@@ -32,7 +32,6 @@ router.post(
 router.get(
     '/',
     protect,
-    authorize('RestaurantManager'),
     async (req, res) => {
         try {
             const restaurants = await Restaurant.find({ manager: req.user._id });
